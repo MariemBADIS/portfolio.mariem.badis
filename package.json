@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/MariemBADIS/mariem.badis",
+  "homepage": "https://mariembadis.github.io/mariem.badis/",
   "name": "mariem-badis-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "node server.js",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist",
+    "build-deploy": "npm run build && npm run deploy"
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
