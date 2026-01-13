@@ -5,7 +5,6 @@ export const ProjectCard = ({
   title,
   subTitle,
   setOpenInsights,
-  githubLink,
 }) => {
   const openInsightsPanel = () => {
     setOpenInsights(true);
@@ -42,15 +41,10 @@ export const ProjectCard = ({
         <div className="buttons flex gap-2 w-full text-[12px]">
           <button
             onClick={() => openInsightsPanel()}
-            className="bg-color1 text-white hover:bg-color1Hover rounded-3xl text-center font-semibold cursor-pointer w-1/2 h-[5vh] tracking-widest"
+            className="bg-color1 text-white hover:bg-color1Hover rounded-3xl text-center font-semibold cursor-pointer w-full h-[5vh] tracking-widest"
           >
             Explore Insights
           </button>
-          <a className="w-1/2" href={githubLink} target="_blank">
-            <button className="text-color2 border-2 border-color2 hover:bg-color2 hover:text-color3 rounded-3xl text-center font-semibold cursor-pointer w-full h-[5vh] tracking-widest">
-              View in Github
-            </button>
-          </a>
         </div>
       </motion.div>
     </>
@@ -61,5 +55,4 @@ ProjectCard.propTypes = {
   title: PropTypes.string,
   subTitle: PropTypes.string,
   setOpenInsights: PropTypes.func,
-  githubLink: PropTypes.string,
 };

@@ -2,7 +2,8 @@ import { motion } from "motion/react";
 import { useState, useEffect } from "react";
 import heroIllustration from "../assets/images/mariem_illustration2.png";
 import linkedin from "../assets/icons/linkedin.svg";
-import github from "../assets/icons/github.svg";
+import whatsapp from "../assets/icons/whatsapp.svg";
+import email from "../assets/icons/email.svg";
 import scrollIcon from "../assets/icons/scroll-animation.svg";
 import doc from "../assets/doc/Mariem-BADIS-Resume-Frontend.pdf";
 export const HeroSect = () => {
@@ -89,7 +90,7 @@ export const HeroSect = () => {
                 target="_blank"
               >
                 <img
-                  className="w-7 cursor-pointer hover:scale-125 duration-100 transition-all"
+                  className="w-7 h-7 cursor-pointer hover:scale-125 duration-100 transition-all object-contain"
                   src={linkedin}
                   alt="LinkedIn Profile"
                   loading="lazy"
@@ -100,13 +101,27 @@ export const HeroSect = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className=""
-                href="https://github.com/MariemBADIS"
+                href="https://wa.me/4915757920063"
                 target="_blank"
               >
                 <img
-                  className="w-9 cursor-pointer hover:scale-125 transition-all"
-                  src={github}
-                  alt="GitHub Profile"
+                  className="w-7 h-7 cursor-pointer hover:scale-125 duration-100 transition-all object-contain"
+                  src={whatsapp}
+                  alt="WhatsApp Contact"
+                  loading="lazy"
+                />
+              </motion.a>
+              <motion.a
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className=""
+                href="mailto:mariem.badis.info@gmail.com"
+              >
+                <img
+                  className="w-7 h-7 cursor-pointer hover:scale-125 duration-100 transition-all object-contain"
+                  src={email}
+                  alt="Email Contact"
                   loading="lazy"
                 />
               </motion.a>

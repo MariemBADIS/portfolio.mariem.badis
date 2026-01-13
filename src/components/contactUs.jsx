@@ -1,8 +1,9 @@
 import { easeInOut, motion } from "motion/react";
 import { useState } from "react";
 import { Footer } from "./footer";
-import github from "../assets/icons/github.svg";
 import linkedin from "../assets/icons/linkedin.svg";
+import whatsapp from "../assets/icons/whatsapp.svg";
+import email from "../assets/icons/email.svg";
 export const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -43,21 +44,21 @@ export const ContactUs = () => {
 
   return (
     <>
-      <div id="Contact" className="h-screen">
+      <div id="Contact" className="min-h-screen">
         <div className="flex justify-center">
-          <div className="w-full px-2 max-w-[80rem] h-full">
-            <div className="h-full py-20">
+          <div className="w-full px-2 max-w-[80rem]">
+            <div className="py-8 md:py-12">
               <motion.div
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
                 viewport={{ amount: 0.3 }}
-                className="text-white text-4xl md:text-5xl tracking-wide font-semibold mb-10 text-center"
+                className="text-white text-4xl md:text-5xl tracking-wide font-semibold mb-6 text-center"
               >
                 Contact
               </motion.div>
-              <div className="form h-screen py-10 px-2 flex max-md:flex-col mt-10 gap-5 items-start">
-                <div className="contact-info w-full md:w-1/2 flex flex-col justify-center gap-8 px-4 md:px-0">
+              <div className="form py-4 px-2 flex max-md:flex-col mt-4 gap-5 items-start">
+                <div className="contact-info w-full md:w-1/2 flex flex-col justify-center gap-5 px-4 md:px-0">
                   <motion.div
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +80,7 @@ export const ContactUs = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
                     viewport={{ amount: 0.3 }}
-                    className="flex flex-col gap-6"
+                    className="flex flex-col gap-4"
                   >
                     <div>
                       <div className="text-white/80 text-xs uppercase tracking-wider mb-2">EMAIL</div>
@@ -104,7 +105,7 @@ export const ContactUs = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
                     viewport={{ amount: 0.3 }}
-                    className="flex flex-col gap-6"
+                    className="flex flex-col gap-4"
                   >
                     <div>
                       <div className="text-white/80 text-xs uppercase tracking-wider mb-2">WORKING HOURS</div>
@@ -120,28 +121,40 @@ export const ContactUs = () => {
                     className="flex gap-4 items-center"
                   >
                     <a
-                      href="https://github.com/MariemBADIS"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cursor-pointer hover:scale-110 transition-transform"
-                    >
-                      <img
-                        className="w-8 h-8"
-                        src={github}
-                        alt="GitHub Profile"
-                        loading="lazy"
-                      />
-                    </a>
-                    <a
                       href="https://www.linkedin.com/in/mariem-badis/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cursor-pointer hover:scale-110 transition-transform"
                     >
                       <img
-                        className="w-8 h-8"
+                        className="w-8 h-8 object-contain"
                         src={linkedin}
                         alt="LinkedIn Profile"
+                        loading="lazy"
+                      />
+                    </a>
+                    <a
+                      href="https://wa.me/4915757920063"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cursor-pointer hover:scale-110 transition-transform"
+                    >
+                      <img
+                        className="w-8 h-8 object-contain"
+                        src={whatsapp}
+                        alt="WhatsApp Contact"
+                        loading="lazy"
+                      />
+                    </a>
+                    <a
+                      href="mailto:mariem.badis.info@gmail.com"
+                      rel="noopener noreferrer"
+                      className="cursor-pointer hover:scale-110 transition-transform"
+                    >
+                      <img
+                        className="w-8 h-8 object-contain"
+                        src={email}
+                        alt="Email Contact"
                         loading="lazy"
                       />
                     </a>
@@ -149,7 +162,7 @@ export const ContactUs = () => {
                 </div>
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-8 py-10 w-full md:w-1/2 items-center justify-center h-full rounded-xl"
+            className="flex flex-col gap-5 py-4 w-full md:w-1/2 items-center justify-center rounded-xl"
           >
             <div className="input-name w-full md:w-3/4">
               <motion.input
