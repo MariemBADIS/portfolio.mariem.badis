@@ -5,7 +5,7 @@ import linkedin from "../assets/icons/linkedin.svg";
 import whatsapp from "../assets/icons/whatsapp.svg";
 import email from "../assets/icons/email.svg";
 import scrollIcon from "../assets/icons/scroll-animation.svg";
-import doc from "../assets/doc/Mariem-BADIS-Resume-Frontend.pdf";
+import doc from "../assets/doc/Mariem BADIS Resume - Frontend.pdf";
 export const HeroSect = () => {
   const [word, setWord] = useState("Developer");
   const words = ["Developer", "Designer"];
