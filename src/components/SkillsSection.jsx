@@ -11,13 +11,13 @@ export const SkillsSection = () => {
       { name: "SCSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" },
     ],
     "Architecture & State Management": [
-      { name: "NgRx", icon: "https://raw.githubusercontent.com/ngrx/platform/master/docs/assets/ngrx-logo.svg" },
+      { name: "NgRx", icon: "https://cdn.jsdelivr.net/gh/ngrx/platform@master/docs/assets/ngrx-logo.svg" },
       { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
-      { name: "RxJS", icon: "https://rxjs.dev/assets/images/logos/rxjs/rxjs.svg" },
+      { name: "RxJS", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/reactivex.svg" },
       { name: "Modular Architecture", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" },
       { name: "Micro-Frontends", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
       { name: "Component-Based Design", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-      { name: "NX Monorepo", icon: "https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.svg" },
+      { name: "NX Monorepo", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nx.svg" },
       { name: "SOLID Principles", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
     ],
     "Performance & Quality": [
@@ -28,14 +28,14 @@ export const SkillsSection = () => {
     "APIs & Security": [
       { name: "REST & GraphQL APIs", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
       { name: "JWT Authentication", icon: "https://jwt.io/img/pic_logo.svg" },
-      { name: "Keycloak", icon: "https://www.keycloak.org/resources/images/keycloak_logo_200px.svg" },
+      { name: "Keycloak", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/keycloak.svg" },
       { name: "NestJS", icon: "https://nestjs.com/img/logo-small.svg" },
       { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
       { name: "Java/Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
     ],
     "UI & Design Systems": [
       { name: "Angular Material", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
-      { name: "PrimeNG", icon: "https://raw.githubusercontent.com/primefaces/primeng/master/src/assets/images/primeng-logo.svg" },
+      { name: "PrimeNG", icon: "https://cdn.jsdelivr.net/gh/primefaces/primeng@master/src/assets/images/primeng-logo.svg" },
       { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
       { name: "Material-UI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" },
     ],
