@@ -97,6 +97,10 @@ export const SkillsSection = () => {
                           alt={`${skill.name} icon`}
                           className="w-4 h-4 object-contain flex-shrink-0" 
                           loading="lazy"
+                          crossOrigin="anonymous"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                          }}
                         />
                       ) : null}
                       <span className="text-white/80 text-xs truncate">{skill.name}</span>
