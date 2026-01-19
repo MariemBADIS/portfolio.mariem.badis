@@ -4,10 +4,10 @@ export const SkillsSection = () => {
   const skills = {
     "Frontend Development": [
       { name: "Angular 14–20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
-      { name: "React", icon: "/src/assets/icons/skills-icon/react-js.svg" },
+      { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
       { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-      { name: "JavaScript (ES6+)", icon: "/src/assets/icons/skills-icon/javascript.svg" },
-      { name: "HTML5", icon: "/src/assets/icons/skills-icon/html.svg" },
+      { name: "JavaScript (ES6+)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
       { name: "SCSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" },
     ],
     "Architecture & State Management": [
@@ -30,12 +30,12 @@ export const SkillsSection = () => {
       { name: "JWT Authentication", icon: "https://jwt.io/img/pic_logo.svg" },
       { name: "Keycloak", icon: "https://www.keycloak.org/resources/images/keycloak_logo_200px.svg" },
       { name: "NestJS", icon: "https://nestjs.com/img/logo-small.svg" },
-      { name: "Node.js", icon: "/src/assets/icons/skills-icon/nodejs.svg" },
+      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
       { name: "Java/Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
     ],
     "UI & Design Systems": [
       { name: "Angular Material", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
-      { name: "PrimeNG", icon: "https://raw.githubusercontent.com/primefaces/primeng/master/src/assets/images/primeng-logo.png" },
+      { name: "PrimeNG", icon: "https://raw.githubusercontent.com/primefaces/primeng/master/src/assets/images/primeng-logo.svg" },
       { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
       { name: "Material-UI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" },
     ],
@@ -50,7 +50,7 @@ export const SkillsSection = () => {
       { name: "Webpack", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" },
       { name: "Vite", icon: "https://vitejs.dev/logo.svg" },
       { name: "Agile / Scrum / Jira", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
-      { name: "Figma", icon: "/src/assets/icons/skills-icon/figma.svg" },
+      { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
     ],
   };
 
