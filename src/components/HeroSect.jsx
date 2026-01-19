@@ -19,14 +19,14 @@ export const HeroSect = () => {
   });
   return (
     <>
-      <div id="Home" className="flex justify-center">
-        <div className="hero-section w-full h-[80vh] flex justify-between relative max-w-[80rem] px-2">
-          <div className="heroText h-full w-full z-30 flex flex-col md:justify-center">
-            <div className="flex flex-col text-white tracking-wide md:gap-1">
-              <span className="font-semibold text-2xl md:text-4xl">
+      <div id="Home" className="flex justify-center overflow-hidden">
+        <div className="hero-section w-full min-h-[80vh] sm:h-[85vh] md:h-[80vh] flex flex-col md:flex-row justify-between relative max-w-[80rem] px-4 sm:px-6 md:px-2 py-8 md:py-0">
+          <div className="heroText h-full w-full md:w-1/2 z-30 flex flex-col justify-center md:justify-center pt-20 sm:pt-24 md:pt-0 relative">
+            <div className="flex flex-col text-white tracking-wide gap-2 sm:gap-1 md:gap-1">
+              <span className="font-semibold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                 Hi! I&apos;m Mariem Badis,
               </span>
-              <span className="font-semibold text-2xl md:text-4xl flex">
+              <span className="font-semibold text-xl sm:text-2xl md:text-3xl lg:text-4xl flex flex-wrap">
                 A {word === "Developer" ? "Frontend" : "Web"}&nbsp;
                 <motion.span
                   key={word}
@@ -56,12 +56,12 @@ export const HeroSect = () => {
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="text-[#989898] font-normal text-[10px] md:text-sm md:w-[70%] leading-relaxed"
+                className="text-[#989898] font-normal text-xs sm:text-[10px] md:text-sm w-full sm:w-[90%] md:w-[70%] leading-relaxed mt-2 sm:mt-1"
               >
                 Hi, I&apos;m Mariem Badis! Senior Frontend Developer with 6+ years building scalable Angular (v14-20) and React applications. Specialized in NgRx, Redux, RxJS, micro-frontend architectures, and frontend performance optimization. Experienced in delivering high-traffic platforms with clean code, accessibility, and automated testing. Based in Munich with a valid Chancenkarte work permit.
               </motion.span>
             </div>
-            <div className="buttons max-sm:absolute bottom-10 w-full flex max-sm:items-center max-md:flex-col text-white gap-3 text-[10px] tracking-widest mt-5">
+            <div className="buttons w-full flex flex-col sm:flex-row items-start sm:items-center text-white gap-3 text-[10px] tracking-widest mt-6 sm:mt-5 md:mt-5">
               <motion.a
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -69,18 +69,19 @@ export const HeroSect = () => {
                 href={doc}
                 target="_blank"
                 download
+                className="w-full sm:w-auto"
               >
                 <motion.button
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-                  className="text-color2 border-2 border-color2 hover:bg-color2 hover:text-color3 rounded-3xl w-[14rem] md:w-[12rem] uppercase text-center font-semibold cursor-pointer py-2"
+                  className="text-color2 border-2 border-color2 hover:bg-color2 hover:text-color3 rounded-3xl w-full sm:w-[14rem] md:w-[12rem] uppercase text-center font-semibold cursor-pointer py-2.5 sm:py-2"
                 >
                   Download CV
                 </motion.button>
               </motion.a>
             </div>
-            <div className="social-icons w-20 flex justify-center items-center gap-3 h-10 mt-5 ml-5">
+            <div className="social-icons w-full sm:w-20 flex justify-start sm:justify-center items-center gap-3 h-10 mt-4 sm:mt-5 ml-0 sm:ml-5">
               <motion.a
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -127,17 +128,17 @@ export const HeroSect = () => {
               </motion.a>
             </div>
           </div>
-          <div className="heroIllustration flex flex-col items-center w-full h-full absolute">
+          <div className="heroIllustration flex flex-col items-center justify-center w-full h-full absolute top-0 left-0 pointer-events-none md:pointer-events-auto">
             <motion.img
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="min-w-[15rem] max-sm:w-[18rem] absolute top-10 md:-top-24 sm:-top-10 -right-10 md:w-1/2 md:-right-20 max-w-md will-change-transform will-change-opacity"
+              className="w-[12rem] sm:w-[16rem] md:w-[18rem] lg:w-[20rem] xl:w-[22rem] absolute top-0 sm:top-4 md:-top-24 right-0 sm:right-4 md:right-0 md:-right-20 lg:-right-24 xl:-right-32 max-w-md will-change-transform will-change-opacity z-10"
               src={heroIllustration}
               alt="Mariem Badis - Frontend Developer Illustration"
               loading="lazy"
             />
-        <div className="absolute bottom-40 md:bottom-5">
+            <div className="absolute bottom-8 sm:bottom-12 md:bottom-5 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none md:translate-x-0">
               <div className="scroll-icon">
                 <motion.img
                   initial={{ opacity: 0 }}
