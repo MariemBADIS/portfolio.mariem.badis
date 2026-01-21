@@ -41,15 +41,15 @@ export const AboutMe = () => {
 
   const experiences = [
     {
-      title: "Freelance Frontend Team Lead (React)",
+      title: "Senior Freelance Frontend Developer",
       company: "Gazela Technology",
       location: "Tunis, Tunisia",
       period: "02/2025 - Current",
       achievements: [
-        "Led development of a modular React framework for a high-traffic dating application using TypeScript and SOLID principles",
-        "Engineered a high-performance React architecture, increasing maintainability and raising SonarQube quality scores by 40%",
-        "Accelerated web application performance, enhancing Core Web Vitals by 35%",
-        "Mentored a 4-developer frontend team, improving delivery efficiency by 25%"
+        "Architected a modular frontend architecture using Angular and TypeScript, applying SOLID and clean code principles to increase maintainability and SonarQube quality scores by 40%.",
+        "Boosted application performance and Core Web Vitals through efficient rendering, state management, and performance tuning, improving user experience metrics by 35%.",
+        "Integrated secure REST APIs with JWT-based authentication, reducing latency by 40% and strengthening frontend security and reliability.",
+        "Mentored a team of 4 frontend developers, establishing architectural standards and best practices that increased delivery efficiency by 25%."
       ],
       screenshots: [
         gazelaScreenshot1,
@@ -68,10 +68,10 @@ export const AboutMe = () => {
       location: "Tunis, Tunisia",
       period: "11/2023 - 01/2025",
       achievements: [
-        "Orchestrated the frontend development of a payment reconciliation platform serving 200+ enterprise clients",
-        "Architected scalable state management with NgRx and Redux, accelerating feature delivery by 20%",
-        "Enhanced performance through code splitting and lazy loading, cutting initial load time by 30%",
-        "Implemented full unit and E2E testing, decreasing regression bugs by 25%"
+        "Directed the frontend development of a payment reconciliation platform using Angular, reducing initial load time by 30% and increasing adoption across 200+ enterprise clients.",
+        "Engineered scalable state management with NgRx and RxJS, applying modular design principles to accelerate feature delivery by 20% and reduce maintenance complexity.",
+        "Refined application responsiveness through lazy loading, code splitting, and advanced change detection, increasing overall user satisfaction.",
+        "Established unit and end-to-end testing practices with Jasmine and Karma, reducing regression issues by 25% and strengthening release stability."
       ],
       screenshots: [
         mncScreenshot1,
@@ -83,15 +83,15 @@ export const AboutMe = () => {
       websiteUrl: "https://mnc.aero/" // Link for company name
     },
     {
-      title: "Frontend Angular Developer, UX/UI Designer",
+      title: "Frontend Developer",
       company: "Rhis software",
       location: "Tunis, Tunisia",
       period: "07/2019 - 10/2023",
       achievements: [
-        "Led development of scalable enterprise HR platforms serving 1,400+ organizations",
-        "Built reusable UI components and shared libraries, reducing delivery time by 20%",
-        "Fine-tuned application performance through advanced RxJS techniques and refined state management",
-        "Translated complex UX designs into responsive, accessible interfaces with WCAG compliance"
+        "Spearheaded development of large-scale HR platforms serving 1,400+ organizations, applying scalable frontend architecture and component-based design using Angular to improve performance, reliability, and adoption.",
+        "Constructed reusable UI components and shared libraries, following DRY principles to reduce development time by 20% and ensure consistent user experience.",
+        "Fortified application stability through advanced RxJS patterns, refined state management, and targeted refactoring, enhancing responsiveness at scale.",
+        "Collaborated within Agile teams on code reviews, CI/CD improvements, and UX implementation aligned with accessibility (WCAG) standards."
       ],
       screenshots: [
         rhisScreenshot1,
@@ -115,8 +115,9 @@ export const AboutMe = () => {
       location: "Tunis, Tunisia",
       period: "05/2018 - 07/2019",
       achievements: [
-        "Built internal web tools using a component-based architecture, streamlining marketing workflows",
-        "Translated UI/UX designs into responsive, cross-browser interfaces, increasing conversion rates by 10%"
+        "Developed internal web tools using component-based architecture, streamlining marketing workflows.",
+        "Translated UI/UX designs into responsive, cross-browser interfaces, improving conversion rates by 10% through A/B testing and usability improvements.",
+        "Applied clean coding and maintainability principles, ensuring reliable and scalable web applications for internal teams."
       ],
       screenshots: [
         decoScreenshot1,
@@ -130,19 +131,19 @@ export const AboutMe = () => {
       location: "Tunis, Tunisia",
       period: "11/2015 - 04/2018",
       achievements: [
-        "Delivered a secure, responsive public information portal compliant with accessibility standards, used by 20,000+ users",
-        "Collaborated within Agile teams on frontend development, bug fixes, and feature delivery"
+        "Delivered a secure, responsive public information portal, applying accessibility standards and improving usability for 20,000+ users.",
+        "Coordinated within Agile teams to develop features, fix bugs, and ensure timely delivery across multiple releases, applying clean code and maintainability principles.",
+        "Implemented consistent responsive interfaces from design mockups, enhancing user experience and engagement."
       ],
       screenshots: [] // Add screenshots when available
     },
     {
-      title: "Frontend & Web Development",
+      title: "Earlier Experience Frontend & Web Development",
       company: "MSS / Fidbell / Smartechnology",
       location: "Tunis, Tunisia",
       period: "06/2013 - 10/2015",
       achievements: [
-        "Developed and maintained responsive web interfaces, integrating accessibility (WCAG) standards across 10+ applications",
-        "Improved Lighthouse scores by 10 points in close collaboration with designers and developers"
+        "Created and maintained responsive web interfaces, integrating accessibility (WCAG) standards across 10+ applications, improving Lighthouse scores by 10 points in close collaboration with designers and developers."
       ],
       screenshots: [], // Add screenshots when available
       companyLinks: {

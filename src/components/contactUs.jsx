@@ -19,23 +19,37 @@ export const ContactUs = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const buildMailtoLink = ({ name, email, phone, message }) => {
+    const subject = encodeURIComponent(`Contact from ${name || "Portfolio visitor"}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}\n`
+    );
+    return `mailto:mariem.badis.info@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
     try {
-      const response = await fetch("https://mariem-badis.vercel.app/api/server", {
+      const endpoint = import.meta.env.VITE_CONTACT_ENDPOINT;
+
+      // No server by default: fall back to mailto
+      if (!endpoint) {
+        window.location.href = buildMailtoLink(formData);
+        setStatus("Opened your email client.");
+        return;
+      }
+
+      const response = await fetch(endpoint, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-      if (response.ok) {
-        setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", phone: "", message: "" });
-      } else {
-        setStatus("Failed to send the message.");
-      }
+
+      if (!response.ok) throw new Error("Request failed");
+
+      setStatus("Message sent successfully!");
+      setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
       console.error("Error:", error);
       setStatus("Error occurred. Try again.");
@@ -217,7 +231,7 @@ export const ContactUs = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Subject"
+                placeholder="Your message"
               />
             </div>
             <button

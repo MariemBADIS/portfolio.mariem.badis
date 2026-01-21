@@ -4,7 +4,6 @@ import { AboutMe } from "./components/AboutMe";
 import { SkillsSection } from "./components/SkillsSection";
 import { ContactUs } from "./components/contactUs";
 import { ScrollArrow } from "./components/ScrollArrow";
-import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <>
@@ -16,7 +15,6 @@ function App() {
           <ContactUs />
           <ScrollArrow />
         </div>
-        <Analytics/>
     </>
   );
 }

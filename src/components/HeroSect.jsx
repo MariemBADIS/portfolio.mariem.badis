@@ -5,7 +5,7 @@ import linkedin from "../assets/icons/linkedin.svg";
 import whatsapp from "../assets/icons/whatsapp.svg";
 import email from "../assets/icons/email.svg";
 import scrollIcon from "../assets/icons/scroll-animation.svg";
-import doc from "../assets/doc/Mariem BADIS Resume - Frontend.pdf";
+import doc from "../assets/doc/Mariem BADIS Resume - Frontend Angular.pdf";
 export const HeroSect = () => {
   const [word, setWord] = useState("Developer");
   const words = ["Developer", "Designer"];
@@ -16,7 +16,7 @@ export const HeroSect = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  });
+  }, []);
   return (
     <>
       <div id="Home" className="flex justify-center overflow-hidden">
