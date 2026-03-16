@@ -110,7 +110,7 @@ export const ContactUs = () => {
                     </div>
                     <div>
                       <div className="text-white/80 text-xs uppercase tracking-wider mb-2">ADDRESS</div>
-                      <div className="text-white text-sm md:text-base">Munich, Germany</div>
+                      <div className="text-white text-sm md:text-base">Berlin, Germany</div>
                     </div>
                   </motion.div>
 
